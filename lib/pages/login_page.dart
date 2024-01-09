@@ -36,12 +36,15 @@ class LoginForm extends StatelessWidget {
         children: [
           Transform.translate(
             offset:
-                const Offset(0, -40), // Sube la imagen 30 unidades hacia arriba
+                const Offset(0, -20), // Sube la imagen 30 unidades hacia arriba
             child: const CircleAvatar(
-              radius: 110,
+              radius: 100,
               backgroundImage: AssetImage('assets/images/logo1.png'),
             ),
           ),
+
+          // const Divider(),
+
           // TextField Usuario
           const Text(
             'Usuario:',
@@ -111,14 +114,15 @@ class LoginForm extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, '/register');
                 },
-                child: const Text(
-                  '¿Ya tiene una cuenta? Crea una nueva cuenta',
+                child: const Expanded(
+                   child: Text('¿Ya tiene una cuenta? Crea una nueva cuenta',
                   style: TextStyle(
                       fontSize: 15,
-                      color: Colors.black), // Ajusta el tamaño y el color
+                      color: Colors.black), // Ajusta el tamaño y el color),
+                  
                 ),
               ),
-              const SizedBox(width: 16),
+              )
             ],
           ),
           const SizedBox(height: 10),

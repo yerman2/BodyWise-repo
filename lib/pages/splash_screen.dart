@@ -48,7 +48,8 @@ class _SplashScreenState extends State<SplashScreen> {
                     const ListTile(
                       titleTextStyle: TextStyle(color: Colors.white),
                       title: Text(
-                        "Medical App",
+                        // "Medical App",
+                        "BodyWise",
                         style: TextStyle(fontSize: 25),
                         textAlign: TextAlign.center,
                       ),
